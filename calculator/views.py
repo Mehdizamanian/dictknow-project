@@ -17,7 +17,7 @@ def index(request):
                 c=n1/n2
 
     except:
-      c="select your operator"
+      c="numbers not found , please enter your numbers again   "
     print(c)
     return render(request,'calculator/index.html',{'c':c})
 
