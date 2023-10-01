@@ -8,7 +8,9 @@ def bmiView(request):
             weight=eval(request.POST.get('weight'))
             age=eval(request.POST.get('age')) 
             if weight<83 and age<23:
-                c='weight is normal'
+                c='you are fit'
+            else:
+                c='damn u fucking fat'
             # elif opr=="-":
             #     c=n1-n2
             # elif opr=="*":
