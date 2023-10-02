@@ -18,44 +18,51 @@
 
     <title>bmi is ready</title>
   </head>
-  <body>
-    <h1>bmi is ready ....</h1>
+  <body class="bg-light">
+    <div class="container-flouid">
+      <h1 class="alert alert-success">bmi is ready ....</h1>
 
-    <form method="POST">
-      {% csrf_token %}
-      <div class="form-row">
-        <div class="col-5">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="weight"
-            name="weight"
-          />
+      <form method="POST">
+        {% csrf_token %}
+        <div class="form-row">
+          <div class="col-sm-12 col-md-4">
+            <input
+              type="text"
+              class="form-control text-center text-md-left"
+              placeholder="weight"
+              name="weight"
+            />
+          </div>
+
+          {% comment %}
+          <select class="col-2" name="opr">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+          </select>
+          {% endcomment %}
+
+          <div class="col-sm-12 col-md-4">
+            <input
+              type="text"
+              class="form-control text-center text-md-left"
+              placeholder="age"
+              name="age"
+            />
+          </div>
+          <button
+            type="submit"
+            class="form-control col-md-4 text-center text-md-left"
+          >
+            response
+          </button>
+          <label class="form-control text-center mt-4 text-success bg-dark">
+            {{c}}</label
+          >
         </div>
-
-        {% comment %}
-        <select class="col-2" name="opr">
-          <option>+</option>
-          <option>-</option>
-          <option>*</option>
-          <option>/</option>
-        </select>
-        {% endcomment %}
-
-        <div class="col-5">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="age"
-            name="age"
-          />
-        </div>
-        <button type="submit" class="form-control">response</button>
-        <label class="form-control text-center mt-4 text-success bg-dark">
-          {{c}}</label
-        >
-      </div>
-    </form>
+      </form>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
