@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,10 +18,28 @@
     />
 
     <title>bmi is ready</title>
+    {% comment %}
+    <style>
+      body {
+        background-image: url("{% static "images/bodyman.gif" %}");
+      }
+      h1,
+      h3 {
+        color: blue;
+      }
+
+      body {
+        text-align: center;
+      }
+    </style>
+    {% endcomment %}
   </head>
-  <body class="bg-light">
+  <body>
+    <img src="{% static "images/bodyman.gif" %}" class=" rounded float-right
+    mt-4" style="width:12rem">
+
     <div class="container-flouid">
-      <h1 class="alert alert-success">bmi is ready ....</h1>
+      <h1 class="alert alert-success lead">bmi is ready ....</h1>
 
       <form method="POST">
         {% csrf_token %}
@@ -57,7 +76,8 @@
           >
             response
           </button>
-          <label class="form-control text-center mt-4 text-success bg-dark">
+
+          <label class="bg bg-danger form-control text-center mt-4 text-white">
             {{c}}</label
           >
         </div>
