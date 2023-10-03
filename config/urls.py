@@ -25,5 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('calculator/', include('calculator.urls')),
     path('bmi/', include('bmi.urls')),
+    path('dictionary/', include('dictionary.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
