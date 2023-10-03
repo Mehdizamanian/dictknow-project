@@ -1,9 +1,9 @@
 from django.shortcuts import render
 
-def indexView(request):
+def index(request):
     return render(request,'dictionary/index.html')
 
-def searchView(request):
+def search(request):
     return render(request,'dictionary/topics-listing.html')
 
 
