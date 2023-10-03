@@ -1,6 +1,10 @@
 from django.shortcuts import render
 
-def dictView(request):
-    return render(request,'dictionary/dictionary.html')
+def indexView(request):
+    return render(request,'dictionary/index.html')
+
+def searchView(request):
+    return render(request,'dictionary/topics-listing.html')
+
 
 # Create your views here.

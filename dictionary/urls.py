@@ -1,10 +1,10 @@
 
 from django.urls import path 
-from .views import dictView
+from .views import indexView, searchView
 
 app_name="dictionary"
 
 urlpatterns = [
-
-    path('', dictView,name='dictview'),
+    path('', indexView,name='index'),
+    path('search/', searchView,name='search'),
 ]
