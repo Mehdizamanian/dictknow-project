@@ -4,8 +4,7 @@ def index(request):
     return render(request,'dictionary/index.html')
 
 def search(request):
-    word = request.GET['word']
-    return render(request,'dictionary/topics-listing.html',{'word':word})
+    return render(request,'dictionary/topics-listing.html')
 
 
 # Create your views here.
