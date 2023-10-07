@@ -1,6 +1,6 @@
 from django.shortcuts import render
 import requests
-
+from PyDictionary import PyDictionary
 
 def index(request):
     return render(request,'dictionary/index.html')
