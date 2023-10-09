@@ -7,8 +7,8 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <i class="bi-back"></i>
-                        <span>Topic</span>
+                        <i class="bi-book"></i>
+                        <span>Dictionary</span>
                     </a>
 
                     <div class="d-lg-none ms-auto me-4">
@@ -65,9 +65,9 @@
                     <div class="row">
 
                         <div class="col-lg-8 col-12 mx-auto">
-                            <h1 class="text-white text-center">Discover. Learn. Enjoy</h1>
+                            <h1 class="text-white text-center">Online Dictionary</h1>
 
-                            <h6 class="text-center">platform for creatives around the world</h6>
+                            <h6 class="text-center">discover . search . learn . enjoy</h6>
 
                             <form method="GET" action="search" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
                                 {% csrf_token %}
@@ -76,7 +76,7 @@
                                         
                                     </span>
 
-                                    <input name="word" type="search" class="form-control" id="keyword" placeholder="Design, Code, Marketing, Finance ..." aria-label="Search">
+                                    <input name="word" type="search" class="form-control" id="keyword" placeholder="Word ..." aria-label="Search">
 
                                     <button type="submit" class="form-control">Search</button>
                                 </div>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </section>
-
+{% comment %} 
 
             <section class="featured-section">
                 <div class="container">
@@ -154,7 +154,7 @@
 
                     </div>
                 </div>
-            </section>
+            </section> {% endcomment %}
 
 
             <section class="explore-section section-padding" id="section_2">
@@ -162,7 +162,7 @@
                     <div class="row">
 
                         <div class="col-12 text-center">
-                            <h2 class="mb-4">Browse Topics</h1>
+                            <h2 class="mb-4">Other Applications</h1>
                         </div>
 
                     </div>
@@ -201,56 +201,57 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
                                     <div class="row">
+                                      
                                         <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
                                             <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
+                                                <a href="http://zamanianmehdi23weatherproject.pythonanywhere.com/">
                                                     <div class="d-flex">
                                                         <div>
-                                                            <h5 class="mb-2">Web Design</h5>
+                                                            <h5 class="mb-2">Weather  </h5>
 
-                                                            <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
+                                                            <p class="mb-0">See what is the weather like in cities. </p>
                                                         </div>
 
                                                         <span class="badge bg-design rounded-pill ms-auto">14</span>
                                                     </div>
 
-                                                    <img src="images/topics/undraw_Remote_design_team_re_urdx.png" class="custom-block-image img-fluid" alt="">
+                                                    <img src="{% static "images/summer.gif" %}" class="custom-block-image img-fluid" alt="">
                                                 </a>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
                                             <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
+                                                <a href="{% url "bmi:bmiview" %}">
                                                     <div class="d-flex">
                                                         <div>
-                                                            <h5 class="mb-2">Graphic</h5>
+                                                            <h5 class="mb-2">BMI Tracker</h5>
 
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                                <p class="mb-0">calculate your weight and receive a plane free . </p>
                                                         </div>
 
                                                         <span class="badge bg-design rounded-pill ms-auto">75</span>
                                                     </div>
 
-                                                    <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png" class="custom-block-image img-fluid" alt="">
+                                                    <img src="{% static "images/bodyman.gif" %}" class="custom-block-image img-fluid" alt="">
                                                 </a>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-4 col-md-6 col-12">
                                             <div class="custom-block bg-white shadow-lg">
-                                                <a href="topics-detail.html">
+                                                <a href="{% url "calculator:index" %}">
                                                     <div class="d-flex">
                                                         <div>
-                                                            <h5 class="mb-2">Logo Design</h5>
+                                                            <h5 class="mb-2">calculator</h5>
 
-                                                                <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                                <p class="mb-0">use simple calculator </p>
                                                         </div>
 
                                                         <span class="badge bg-design rounded-pill ms-auto">100</span>
                                                     </div>
 
-                                                    <img src="images/topics/colleagues-working-cozy-office-medium-shot.png" class="custom-block-image img-fluid" alt="">
+                                                    <img src="{% static "images/calculator.gif" %}" class="custom-block-image img-fluid" alt="">
                                                 </a>
                                             </div>
                                         </div>
