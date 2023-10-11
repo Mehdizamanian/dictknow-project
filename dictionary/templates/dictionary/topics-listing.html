@@ -12,9 +12,9 @@
             <div class="col-lg-8 col-12 mx-auto">
                 <h1 class="text-white text-left float-left"> {{word |title}} </h1>
 
-                <a href="{% url "dictionary:index" %}"> <h6 class="text-center text-white float-right mt-3 "><em style="margin-left:12.5rem">Try Another Word</em></h6></a>
+                <div class="text-center"><a href="{% url "dictionary:index" %}"> <h6 class="text-white "><em class="text-center  col-12">Try Another Word</em></h6></a></div>
 
-                <form method="GET"  class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                {% comment %} <form method="GET"  class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
                     {% csrf_token %}
                     <div class="input-group input-group-lg">
                         <span class="input-group-text bi-search" id="basic-addon1">
@@ -25,7 +25,7 @@
 
                         <button type="submit" class="form-control">Search</button>
                     </div>
-                </form>
+                </form> {% endcomment %}
             </div>
 
         </div>
