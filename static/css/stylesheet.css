@@ -65,3 +65,21 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 }
+
+
+/* tiopic listening  */
+
+.site-header {
+    background-image: linear-gradient(15deg, #ff0707 40%, #036b5f 100%);
+    padding-top: 119px;
+    padding-bottom: 80px;
+  }
+  
+
+  .hero-section2{
+    background-image: linear-gradient(95deg, #ff0000 0%, #df2240 100%);
+    position: relative;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
