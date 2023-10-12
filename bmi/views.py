@@ -11,12 +11,6 @@ def bmiView(request):
                 c='you are fit'
             else:
                 c='damn u fucking fat'
-            # elif opr=="-":
-            #     c=n1-n2
-            # elif opr=="*":
-            #     c=n1*n2 ;  
-            # elif opr=="/":
-            #     c=n1/n2
 
     except:
       c="numbers not found , please enter your numbers again"

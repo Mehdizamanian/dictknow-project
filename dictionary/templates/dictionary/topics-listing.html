@@ -179,7 +179,10 @@
                   <div>
                     <h5 class="mb-2">synonym</h5>
 
-                    <p class="mb-0">{{word}} : {{synonyms}}</p>
+                    <p class="mb-0">{{word}} :         
+                      {% for synonym in synonyms %}
+                      {{ synonym }}
+                  {% endfor %}</p>
 
                     {% comment %} <a
                       href="topics-detail.html"
@@ -213,9 +216,10 @@
 
                     <p class="mb-0">{{word}} :
                       
-                      {% for antonym in antonyms %}{{antonym}}{% endfor %}
-                      
-                      {{antonyms}}</p>
+                      {% for antonym in antonyms %}
+                     {{ antonym }}
+                  {% endfor %}
+                </p>
 
                     {% comment %} <a
                       href="topics-detail.html"
@@ -271,7 +275,9 @@
       </div>
     </section>
 
-    
+
+
+ 
 
 
   <!-- JAVASCRIPT FILES -->
